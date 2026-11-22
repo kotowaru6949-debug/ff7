@@ -107,6 +107,13 @@ def get_scene_bin_path(game_dir: Path, lang: str = "ja") -> Path:
     return game_dir / "ff7" / "workingdir" / "data" / f"lang-{lang}" / "battle" / "scene.bin"
 
 
+def get_kernel_bin_path(game_dir: Path, lang: str = "ja") -> Path:
+    """Return the kernel.bin path for the given language code."""
+    if lang not in SUPPORTED_LANGS:
+        raise ValueError(f"Unsupported language code: {lang!r}")
+    return game_dir / "ff7" / "workingdir" / "data" / f"lang-{lang}" / "kernel" / "kernel.bin"
+
+
 def get_executable_paths(game_dir: Path) -> tuple[Path, Path]:
     """Return (FFVII.exe, FFVII_LAUNCHER.exe) paths under game_dir."""
     return game_dir / "FFVII.exe", game_dir / "FFVII_LAUNCHER.exe"

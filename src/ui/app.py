@@ -151,7 +151,7 @@ class FF7ComfortApp(tk.Tk):
             set_status=self.set_status,
         )
 
-        notebook.add(self.drop_tab, text=" ドロップ率100% ")
+        notebook.add(self.drop_tab, text=" ドロップ・報酬倍率 ")
         notebook.add(self.missables_tab, text=" 取り逃し防止 ")
         notebook.add(self.enemy_skills_tab, text=" てきのわざ (24種) ")
 

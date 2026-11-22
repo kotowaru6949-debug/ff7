@@ -92,6 +92,12 @@ class TestStateStore(unittest.TestCase):
 
             state.game_dir = r"C:\Games\FF7"
             state.selected_lang = "en"
+            state.patch_drop_100 = False
+            state.patch_rare_first = False
+            state.patch_steal_100 = True
+            state.patch_exp_mult = 3.5
+            state.patch_ap_mult = 5.0
+            state.patch_gil_mult = 0.0
             state.missables_checked["d1_shinra_68f_enemy_skill_1"] = True
             state.missables_notes["d1_shinra_68f_enemy_skill_1"] = "取得メモ"
             state.enemy_skills_checked["24"] = [True, True, True, True]
@@ -101,10 +107,28 @@ class TestStateStore(unittest.TestCase):
             reloaded = store.load()
             self.assertEqual(reloaded.game_dir, r"C:\Games\FF7")
             self.assertEqual(reloaded.selected_lang, "en")
+            self.assertFalse(reloaded.patch_drop_100)
+            self.assertFalse(reloaded.patch_rare_first)
+            self.assertTrue(reloaded.patch_steal_100)
+            self.assertEqual(reloaded.patch_exp_mult, 3.5)
+            self.assertEqual(reloaded.patch_ap_mult, 5.0)
+            self.assertEqual(reloaded.patch_gil_mult, 0.0)
             self.assertTrue(reloaded.missables_checked["d1_shinra_68f_enemy_skill_1"])
             self.assertEqual(reloaded.missables_notes["d1_shinra_68f_enemy_skill_1"], "取得メモ")
             self.assertEqual(reloaded.enemy_skills_checked["24"], [True, True, True, True])
             self.assertEqual(reloaded.enemy_skill_materias_obtained, [True, False, True, False])
+
+    def test_multiplier_normalization_bounds(self) -> None:
+        state = ToolState.from_dict(
+            {
+                "patch_exp_mult": -5.0,
+                "patch_ap_mult": 500.0,
+                "patch_gil_mult": "invalid",
+            }
+        )
+        self.assertEqual(state.patch_exp_mult, 0.0)
+        self.assertEqual(state.patch_ap_mult, 100.0)
+        self.assertEqual(state.patch_gil_mult, 1.0)
 
 
 if __name__ == "__main__":
