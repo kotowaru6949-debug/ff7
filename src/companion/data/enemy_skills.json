@@ -1,0 +1,314 @@
+{
+  "materias": [
+    {
+      "slot": 1,
+      "label": "① 神羅ビル 68F",
+      "location": "Disc 1 神羅ビル 68F（サンプル:H0512戦後の培養カプセル内 ※期間限定）"
+    },
+    {
+      "slot": 2,
+      "label": "② ジュノン初心者館",
+      "location": "Disc 1〜 アルジュノン 武器屋隣の「初心者館」地下"
+    },
+    {
+      "slot": 3,
+      "label": "③ 忘らるる都",
+      "location": "Disc 2〜 忘らるる都 貝殻の家（休む部屋の奥）"
+    },
+    {
+      "slot": 4,
+      "label": "④ チョコボ仙人の家",
+      "location": "Disc 2〜 アイシクルエリア東・チョコボ仙人の家"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "カエルのうた",
+      "mp": 5,
+      "category": "状態異常",
+      "effect": "敵単体を「睡眠＋カエル」状態にする。",
+      "enemies": "タッチミー（ゴンガガ周辺森）、トキシボックス（古代種の神殿）、クリストファー（北の大空洞）",
+      "manipulate_required": false,
+      "manipulate_note": "自発使用もするが「あやつる」を使うと即座に習得可能。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 2,
+      "name": "レベル4自爆",
+      "mp": 10,
+      "category": "割合・特殊",
+      "effect": "レベルが4の倍数の敵に瀕死級ダメージ（残りHP約1/32）＋ミニマム。",
+      "enemies": "ムー（ミディール周辺草原）、トリックプレイ（アイシクルロッジ周辺）",
+      "manipulate_required": false,
+      "manipulate_note": "自発使用または「あやつる」。味方のレベルを4の倍数にして受けること。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 3,
+      "name": "マジックハンマー",
+      "mp": 3,
+      "category": "補助・吸収",
+      "effect": "敵単体のMPを100吸収して自分のMPを回復する（MP枯渇対策に超優秀）。",
+      "enemies": "レイザーウィード（ウータイ周辺草原）",
+      "manipulate_required": false,
+      "manipulate_note": "自発使用率は低いため「あやつる」推奨。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 4,
+      "name": "ホワイトウィンド",
+      "mp": 34,
+      "category": "回復",
+      "effect": "使用者の現在HP分だけ味方全体を回復し、多くの状態異常も同時に治す。",
+      "enemies": "ゼムゼレット（ジュノン周辺）、ウインドウイング（竜巻の迷宮）",
+      "manipulate_required": true,
+      "manipulate_note": "「あやつる」必須。操作して味方側に使わせる。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 5,
+      "name": "マイティガード",
+      "mp": 56,
+      "category": "補助",
+      "effect": "味方全体に「バリア＋マバリア＋ヘイスト」を同時にかける最強クラスの補助技。",
+      "enemies": "ビーチプラグ（コレル〜ゴンガガ〜コスタ・デル・ソル周辺の砂浜）",
+      "manipulate_required": true,
+      "manipulate_note": "「あやつる」必須。操作して味方側に使わせる。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 6,
+      "name": "天使のささやき",
+      "mp": 50,
+      "category": "回復",
+      "effect": "味方単体のHPを完全回復し、戦闘不能を含む状態異常もすべて回復する。",
+      "enemies": "ポーランサリタ（北の大空洞・水辺周辺）",
+      "manipulate_required": true,
+      "manipulate_note": "「あやつる」必須。操作して味方に使わせる（敵に使わないよう注意）。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 7,
+      "name": "ドラゴンフォース",
+      "mp": 19,
+      "category": "補助",
+      "effect": "味方単体の物理防御力と魔法防御力を1.5倍にする（重ねがけ可）。",
+      "enemies": "ダークドラゴン（北の大空洞・洞窟エリア）",
+      "manipulate_required": true,
+      "manipulate_note": "「あやつる」必須。操作して味方に使わせる。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 8,
+      "name": "デスフォース",
+      "mp": 3,
+      "category": "補助",
+      "effect": "味方単体に「即死」と「死の宣告」への耐性を付与する。",
+      "enemies": "アダマンタイマイ（ウータイ南の砂浜）",
+      "manipulate_required": true,
+      "manipulate_note": "「あやつる」必須。操作して味方に使わせる。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 9,
+      "name": "火炎放射",
+      "mp": 10,
+      "category": "攻撃（炎）",
+      "effect": "敵単体に炎属性のダメージを与える。",
+      "enemies": "アークドラゴン（ミスリルマイン）、ドラゴン（ニブル山）",
+      "manipulate_required": false,
+      "manipulate_note": "高頻度で自発使用。「あやつる」でも習得可。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 10,
+      "name": "レーザー",
+      "mp": 16,
+      "category": "割合",
+      "effect": "敵単体に現在HPの半分の割合ダメージ（重力が効く強敵に有効）。",
+      "enemies": "デスクロー（コレルプリズン砂漠）、ダークドラゴン（北の大空洞）",
+      "manipulate_required": false,
+      "manipulate_note": "自発使用するほか、デスクローは「あやつる」も効く。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 11,
+      "name": "マトラマジック",
+      "mp": 8,
+      "category": "攻撃（全体）",
+      "effect": "敵全体に無属性の連続ミサイル攻撃（序盤の主力全体技）。",
+      "enemies": "スイーパーカスタム（ミッドガル周辺荒野）、ブルモーター（列車墓場周辺）、デスクロー",
+      "manipulate_required": false,
+      "manipulate_note": "ミッドガル脱出直後の荒野でスイーパーカスタムからすぐ覚えられる。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 12,
+      "name": "臭い息",
+      "mp": 58,
+      "category": "状態異常（全体）",
+      "effect": "敵全体に毒・睡眠・混乱・沈黙・ミニマム・カエルをまとめて付与する。",
+      "enemies": "モルボル（ガイアの絶壁、北の大空洞）",
+      "manipulate_required": false,
+      "manipulate_note": "「リボン」を装備して受けると安全に習得できる。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 13,
+      "name": "ベータ",
+      "mp": 35,
+      "category": "攻撃（炎・全体）",
+      "effect": "敵全体に炎属性の特大ダメージ（序盤〜中盤の最強技）。",
+      "enemies": "ミドガルズオルム（グラスランドの湿地帯）",
+      "manipulate_required": false,
+      "manipulate_note": "HPを一定以下まで削るとカウンターで使用。「ぞくせい＋ほのお」や「サポータ」で耐える準備が必要。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 14,
+      "name": "アクアブレス",
+      "mp": 34,
+      "category": "攻撃（水・全体）",
+      "effect": "敵全体に水属性の大ダメージ。",
+      "enemies": "キマイラ（ゴールドソーサー周辺砂漠）、ジェノバ・LIFE（忘らるる都）",
+      "manipulate_required": false,
+      "manipulate_note": "コレルプリズン脱出直後に砂漠のキマイラから簡単に覚えられる。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 15,
+      "name": "トライン",
+      "mp": 20,
+      "category": "攻撃（雷・全体）",
+      "effect": "敵全体に雷属性の中〜大ダメージ。",
+      "enemies": "マテリアキーパー（ニブル山ボス）、ゴドー（ウータイ五強の塔）、スティルヴ（ガイアの絶壁）",
+      "manipulate_required": false,
+      "manipulate_note": "3体ともボス/限定エリア敵のため「あやつる」無効。使うまで待つこと。",
+      "missable": true,
+      "missable_note": "【期間限定】使用敵は全編で上記3種類のみ。特にマテリア4個すべてに覚えさせたい場合、4個目のマテリアをチョコボ仙人の家で入手するまで「ゴドー」を倒さずに残しておき、4個装備して五強の塔へ挑むのが定番！"
+    },
+    {
+      "id": 16,
+      "name": "マジカルブレス",
+      "mp": 75,
+      "category": "攻撃（3属性・全体）",
+      "effect": "敵全体に「炎・冷気・雷」3属性複合の超火力ダメージ。",
+      "enemies": "スティルヴ（ガイアの絶壁）、パラサイト（北の大空洞）",
+      "manipulate_required": false,
+      "manipulate_note": "威力が高いため全体耐性・HP確保の上で受けること。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 17,
+      "name": "？？？？",
+      "mp": 3,
+      "category": "特殊攻撃",
+      "effect": "敵単体に「使用者の最大HP − 現在HP」分の固定ダメージを与える。",
+      "enemies": "ジャージー（ニブルヘイム・神羅屋敷）、キングベヒーモス（北の大空洞）",
+      "manipulate_required": false,
+      "manipulate_note": "ジャージー（天秤型モンスター）から中盤でも習得可能。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 18,
+      "name": "ゴブリンパンチ",
+      "mp": 0,
+      "category": "攻撃（物理）",
+      "effect": "MP0で放てる無属性攻撃。使用者と敵のレベルが同じなら威力8倍。",
+      "enemies": "ゴブリン（ゴブリンアイランドの森）",
+      "manipulate_required": false,
+      "manipulate_note": "ハイウインド入手後に北東の「ゴブリンアイランド」で習得（「あやつる」も有効）。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 19,
+      "name": "チョコボックル",
+      "mp": 3,
+      "category": "特殊攻撃",
+      "effect": "敵単体に逃げた回数に応じたダメージを与える。",
+      "enemies": "チョコボ（ミディール周辺などでレベル4の倍数の個体）",
+      "manipulate_required": false,
+      "manipulate_note": "手順：①ミディール周辺等でチョコボに「ミメットの野菜」や「ギサールの野菜」を与える → ②Lvが4の倍数のチョコボに「レベル4自爆」を当てるとカウンターで発動！（※逃走条件で即逃げないように先に野菜必須）",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 20,
+      "name": "レベル5デス",
+      "mp": 22,
+      "category": "即死（全体）",
+      "effect": "レベルが5の倍数の敵全員を即死させる。",
+      "enemies": "パラサイト（北の大空洞）",
+      "manipulate_required": false,
+      "manipulate_note": "習得キャラのレベルを5の倍数にしておくこと（即死耐性をつけるとラーニングできないので注意・フェニックスの尾で蘇生すれば覚えている）。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 21,
+      "name": "死の宣告",
+      "mp": 10,
+      "category": "状態異常",
+      "effect": "敵単体に死の宣告（60カウント後に即死）を付与する。",
+      "enemies": "ギ・スペクター（ギ族の洞窟）、スニークアイ、バウンドファット（サンゴの谷）",
+      "manipulate_required": false,
+      "manipulate_note": "ギ族の洞窟やサンゴの谷で高頻度に使用してくる。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 22,
+      "name": "死のルーレット",
+      "mp": 6,
+      "category": "即死（ランダム）",
+      "effect": "敵味方ランダムで1人を即死させる。",
+      "enemies": "デスディーラー（北の大空洞）",
+      "manipulate_required": false,
+      "manipulate_note": "味方に当たれば習得完了（「あやつる」で味方側が選ばれるまで試行も可）。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 23,
+      "name": "シャドウフレア",
+      "mp": 100,
+      "category": "攻撃（単体特大）",
+      "effect": "敵単体に無属性の特大魔法ダメージを与える最強クラスの単体技。",
+      "enemies": "アルテマウェポン（撃破時FA）、ドラゴンゾンビ（北の大空洞）、セーファ・セフィロス",
+      "manipulate_required": false,
+      "manipulate_note": "アルテマウェポンをコズモエリア上空で仕留める際、最後の反撃（FA）で受けて生存すると確実。",
+      "missable": false,
+      "missable_note": ""
+    },
+    {
+      "id": 24,
+      "name": "なんとか？？？？（パンドラボックス）",
+      "mp": 110,
+      "category": "攻撃（全体特大）",
+      "effect": "敵全体に防御無視の無属性特大ダメージを与える隠し究極技。",
+      "enemies": "ドラゴンゾンビ（北の大空洞）",
+      "manipulate_required": false,
+      "manipulate_note": "ドラゴンゾンビ撃破時のファイナルアタックとして発動。必ず生きて受け切る必要があるためHP満タン＋リレイズ/バリア推奨。",
+      "missable": true,
+      "missable_note": "【超重要・全編で1回限り】原作の内部フラグ仕様により、ドラゴンゾンビをゲーム全体で「初めて倒した1回」しか使わない。2体目以降は二度と発動しないため、北の大空洞へ入る前に必ず「てきのわざ」4個すべてを装備して初戦に臨むこと！"
+    }
+  ]
+}

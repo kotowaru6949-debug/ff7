@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Tool user data, backups & logs (never commit personal saves or game assets)
+user_data/
+*.orig
+*.bak
+*.tmp
+scene.bin
+*.ff7
+*.log
